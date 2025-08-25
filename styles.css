@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Mobile */
+@media screen and (max-width: 73.0625em) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: 100dvh;
+        /* display:flex; */
+        /* justify-content: center; */
+        border: 1px solid red;
+        align-items: center;
+        margin: 0 1rem;
+        position: relative;
+        /* z-index:0; */
+        background-image: url("./assets/images/background-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-color:hsl(275, 100%, 97%);
+    }
+
+    main {
+        /* z-index:1; */
+        background-color: hsl(0, 100%, 100%);
+        border: 2px solid blue;
+        position: absolute;
+        top: 22%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-radius:0.8rem;
+    }
+
+    .common {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main>div:nth-child(1) {
+        display: flex;
+        /* justify-content:space-between; */
+        gap: 2rem;
+    }
+    main>p{
+    font-weight:400;
+    line-height:1.2rem;
+    font-family: "Work Sans", sans-serif;
+    }
+    .common>p {
+        font-family: "Work Sans", sans-serif;
+        font-weight:600;
+    }
+    /* .first{
+        display:none;
+    }
+    .sec{
+        display:block;
+    } */
+}
